@@ -1,6 +1,6 @@
 # openModal Project.
 
-Platform proposed by Wender Z. Xavier on [BiDU'18](http://#) for comprehension and analyses of human mobility data.
+Platform proposed by Wender Z. Xavier for comprehension and analyses of human mobility data and updated by Augusto Pertence
 
 ## Requirements
 
