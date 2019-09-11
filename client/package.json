@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
@@ -22,7 +21,7 @@
     "react-redux": "^6.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.5",
+    "react-scripts": "^3.1.1",
     "redux": "^4.0.1",
     "uuid": "^3.3.2"
   },
@@ -36,9 +35,12 @@
     "extends": "react-app"
   },
   "browserslist": [
-    ">0.2%",
+    "> 2%",
+    "last 2 versions",
     "not dead",
     "not ie <= 11",
+    "not ie_mob <=11",
+    "not op_mob <=46",
     "not op_mini all"
   ],
   "proxy": "http://localhost:5000"
