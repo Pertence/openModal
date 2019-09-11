@@ -1,0 +1,344 @@
+.menu-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.startEmpty{
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0 0 20px 0;
+}
+
+.menu-content form{
+    width: 100%;
+}
+
+.menu-content h1{
+    font-size: 20px;
+    margin: 0;
+}
+
+.menu-content p{
+    font-size: 14px;
+}
+
+.map-selection{
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    border: 3px solid white;
+    margin: 5px 0;
+    background-size: cover;
+    text-align: center;
+    cursor: context-menu;
+}
+
+.map-selection span{
+    line-height: 100px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 3px 3px 7px black, -3px -3px 7px black;
+}
+
+.menu-wrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.marker-color{
+    margin: 5px;
+    width: 35%;
+    min-width: 50px;
+    height: 60px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.marker-label{
+    width: 20%;
+    max-width: 200px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-item{
+    background: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(62, 62, 62);
+    border-radius: 5%;
+    cursor: pointer;
+    border: 2px solid white;
+    margin: 10px 0;
+}
+
+.input-item i{
+    margin: 0 5px;
+}
+
+#submit-data{
+    background: white;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+    color: rgb(62, 62, 62);
+    border: 2px solid white;
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 5%;
+    transition: .2s;
+}
+
+#submit-data:hover{
+    transition: .2s;
+    transform: scale(1.1);
+}
+
+.input-btn{
+    display: none;
+}
+
+.marker-type{
+    width: 30%;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.marker-type svg{
+    fill: rgb(230, 226, 226);
+}
+
+.selectMarker{
+    border: 2px solid white;
+}
+
+.update-btn{
+    width: 80%;
+    height: 40px;
+    border-radius: 2%;
+    border: none;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(62, 62, 62);
+    transition: .2s;
+}
+
+.update-btn:hover{
+    transition: .2s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px white, -2px -2px 15px white;
+}
+
+#current{
+    margin-bottom: 50px;
+}
+
+.selectedMarker{
+    border: 2px solid white;
+}
+
+.marker-group{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    border: solid white;
+    border-width: 0px 0px 2px 0px;
+    padding: 10px 0px;
+}
+
+.group-title{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.color-picker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-picker input{
+    border: none;
+    margin-left: 5px;
+}
+
+.markertype-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.markertype-group label{
+    height: auto;
+    min-width: 33px;
+    width: 13%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.plot-data{
+    margin: 20px 0;
+}
+
+.btn-primary{
+    background-color: #007bff;
+    border: #007bff;
+    color: white;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+
+.btn-default{
+    border-radius: .2rem;
+    cursor: pointer;
+    background-color: #b9bcbe;
+    border: #b9bcbe;
+}
+
+.calendar{
+    min-width: 100px;
+    color: white;
+}
+
+#update-mapdata, #reset-data{
+    display: none;
+}
+
+.timeVar-btn{
+    background: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: rgb(62, 62, 62);
+    border-radius: 5%;
+    cursor: pointer;
+    border: 2px solid white;
+    margin: 5px 0;
+}
+
+.reset-btn{
+    min-width: 140px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.date-picker-icon{
+    font-size: 50px;
+    transition: .2s;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.date-picker-icon:hover{
+    text-shadow: 4px 4px rgb(56, 53, 53), -2px -2px rgb(87, 87, 83);
+    font-size: 52px;
+    transition: .2s;
+}
+
+.interval-display{
+    margin: 0;
+}
+
+.select-variation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-variation{
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.check-variation input{
+    display: none;
+}
+
+.variation-select{
+    background: white;
+    color: #20308b;
+}
+
+.gradient-scale{
+    height: auto;
+    min-height: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.gradient{
+    width: 100%;
+    text-align: left;
+    margin: 5px auto;
+}
+
+.gradient p{
+    margin: 0;
+}
+
+.gradient-select{
+    border: 3px solid white;
+}
+
+
+.heatmap-btn{
+    margin: 10px 0;
+    width: 80%;
+    height: 40px;
+    border-radius: 2%;
+    border: none;
+    background: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(62, 62, 62);
+    transition: .2s;
+}
+
+.heatmap-btn:hover{
+    transition: .2s;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px white, -2px -2px 15px white;
+}
+
+#sliderVariation{
+    width: 100px;
+    height: 200px;
+}
+
+#menu-selected p{
+    font-size: 16px;
+}
+
+.intervals-time{
+    margin-top: 50px;
+}
+
+.daterangepicker td.in-range{
+    background-color: #819eb8 !important;
+}
+
+.daterangepicker td.active{
+    background-color: #357ebd !important;
+}

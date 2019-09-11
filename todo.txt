@@ -1,0 +1,6 @@
+ - Atualizar as dependências vulneráveis do projeto
+ - Atualizar mensagem depois da execução do algoritmo para os dados do Uber
+ - Desabilitar o uso de certos algoritmos para certas cidades
+ - Posibilitar a realização de mais de uma análise por execução
+ - Posibilitar o continuação do uso do servidor quando há problema no cliente
+ - Posibilitar o continuação do uso do cliente quando há problema no servidor

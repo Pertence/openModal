@@ -1,0 +1,26 @@
+﻿Guia para a plataforma openModal
+
+Requisitos
+- Ubuntu 18.04 ou mais novo
+- Node.js 8.10.0 ou mais novo
+- NPM 3.5.2 ou mais novo
+- Python 3.6 ou mais novo
+- Pip3 9.0.1 ou mais novo
+
+Instalação do openModal
+
+- Após baixar e descompactar a pasta do projeto, acesse o terminal e abra o diretório raiz do Open Modal
+- Após instalação execute o arquivo install.sh ou install.bat
+
+Execução do openModal
+
+- Iniciar o servidor, executando o comando 'npm start' na raiz do projeto
+- Iniciar o client, executando o comando 'npm start na raiz da pasta 'client'
+
+Utilização da plataforma
+
+- Selecionar uma cidade na cidade na parte mais a esquerda da página
+- Selecionar um algoritmo na parte do meio da página
+- Selecionar os parâmetros se for o caso
+- Selecionar a vizualiação na parte mais a direita
+

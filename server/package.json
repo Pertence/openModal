@@ -1,0 +1,23 @@
+{
+  "name": "openmodal",
+  "version": "1.0.2",
+  "description": "Platform for mobility analyses using open datasets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mobility",
+    "open",
+    "data",
+    "human",
+    "mobility"
+  ],
+  "author": "Wender Z. Xavier",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "rimraf": "^2.6.3"
+  }
+}

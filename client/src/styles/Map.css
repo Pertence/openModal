@@ -1,0 +1,21 @@
+#map{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.markerStyle{
+    border: none;
+    background: transparent;
+}
+
+#map-component{
+    width: 100%;
+    height: 100%;
+}
+
+#map-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
