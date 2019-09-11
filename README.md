@@ -3,8 +3,6 @@
 Platform proposed by Wender Z. Xavier on [BiDU'18](http://#) for comprehension and analyses of human mobility data.
 
 ## Requirements
-* Node.js (tested on v10.11).
-* Python 2.7
 
 ## Online Version
   
@@ -32,10 +30,11 @@ You can access [openModal](#) at PUC-Minas Server.
  +-- taichung-server/
   |-- bus.csv
   |-- metro.csv 
-+-- node_modules/ - Required project packages. Do not modify this folder contents.
-|-- server.js - Node server configuration (executes the python scripts).
-|-- README.MD - This README file.
-|-- package.json - npm package manager file. It's unlikely that you'll need to modify this.
++-- server/
+ +-- node_modules/ - Required project packages. Do not modify this folder contents.
+ |-- server.js - Node server configuration (executes the python scripts).
+ |-- README.MD - This README file.
+ |-- package.json - npm package manager file. It's unlikely that you'll need to modify this.
 ```
 
 #### Source Folder
