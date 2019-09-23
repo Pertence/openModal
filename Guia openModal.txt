@@ -1,6 +1,6 @@
 ﻿Guia para a plataforma openModal
 
-Requisitos
+Requisitos de desenvolvimento
 - Ubuntu 18.04 ou mais novo
 - Node.js 8.10.0 ou mais novo
 - NPM 3.5.2 ou mais novo
@@ -23,4 +23,5 @@ Utilização da plataforma
 - Selecionar um algoritmo na parte do meio da página
 - Selecionar os parâmetros se for o caso
 - Selecionar a vizualiação na parte mais a direita
+- Os resultados serão gravados na pasta client/public/results, lembrando que eles podem ser sobrescritos
 
