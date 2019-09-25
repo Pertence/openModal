@@ -1,4 +1,7 @@
- - Desabilitar o uso de certos algoritmos para certas cidades
+ - Posibilitar o upload de arquivos de dados
+ - Desabilitar o uso de certos algoritmos para certos dados
  - Posibilitar a realização de mais de uma análise por execução
+ - Verficar alguns algoritmos
+ - 
  - Tratamento de exceção
  - Mudar os dados de rede de transporte público para o formato GTFS
