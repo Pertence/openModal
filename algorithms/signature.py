@@ -2,10 +2,9 @@ import pandas as pd
 import numpy as np
 import math
 from geopy.distance import great_circle
-import plotly
 import plotly.graph_objs as go
 import plotly.plotly as py
-from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+from plotly.offline import download_plotlyjs, plot
 from plotly import tools
 import random
 import os
@@ -19,8 +18,6 @@ from folium.features import *
 from collections import Counter
 from folium import plugins
 import folium
-plotly.tools.set_credentials_file(username='wenderxavier', api_key='tBnfQH1KHP96MJK0X3TD')
-
 
 def createDataframes(data_loc):
     script_dir = os.getcwd()
