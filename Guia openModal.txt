@@ -2,6 +2,7 @@
 
 Requisitos de desenvolvimento
 - Ubuntu 18.04 ou mais novo
+- As duas versões mais recentes do Firefox ou Chrome
 - Node.js 8.10.0 ou mais novo
 - NPM 3.5.2 ou mais novo
 - Python 3.6 ou mais novo
