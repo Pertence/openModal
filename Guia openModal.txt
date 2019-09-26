@@ -11,7 +11,7 @@ Requisitos de desenvolvimento
 Instalação do openModal
 
 - Após baixar e descompactar a pasta do projeto, acesse o terminal e abra o diretório raiz do Open Modal
-- Após instalação execute o arquivo install.sh ou install.bat
+- Após instalação execute o arquivo install.sh
 
 Execução do openModal
 
