@@ -10,7 +10,8 @@ npm install
 cd ..
 cd client
 npm install
-
+npm remove csstools/normalize.css
+npm install csstools/normalize.css
 
 #Instalação dos módulos python
 
