@@ -1,7 +1,5 @@
- - Posibilitar o upload de arquivos de dados
  - Desabilitar o uso de certos algoritmos para certos dados
  - Posibilitar a realização de mais de uma análise por execução
- - Verificar a execução dos algoritmos
  - Criar mecanismo de publicação do website
  - Tratamento de exceção
  - Mudar os dados de rede de transporte público para o formato GTFS
