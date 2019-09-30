@@ -35,12 +35,9 @@
     "extends": "react-app"
   },
   "browserslist": [
-    "> 2%",
-    "last 2 versions",
+    ">0.2%",
     "not dead",
     "not ie <= 11",
-    "not ie_mob <=11",
-    "not op_mob <=46",
     "not op_mini all"
   ],
   "proxy": "http://localhost:5000"
