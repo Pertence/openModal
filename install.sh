@@ -6,10 +6,10 @@
 
 #Instalação dos módulos javascript
 cd server
-npm install server
+npm install
 cd ..
 cd client
-npm install client
+npm install
 
 
 #Instalação dos módulos python
