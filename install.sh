@@ -1,4 +1,4 @@
-﻿#Comandos de isntalação para o openModal
+﻿#Comandos de instalação para o openModal
 
 
 #Esse arquivo precisa estar no diretório raiz da plataforma
