@@ -66,6 +66,7 @@ class Results extends Component {
         const { results } = this.state
         return (
             <div className={classes.area}>
+                {<button type="button" onClick={function (){window.location.reload();}}> <span>Reload</span> </button>}
                 {results.length === 0 ? <p>Running Algorithms. This may take a while...</p> : ''}
                 <Grid container spacing={8}>
                     {results.map((result, key) => (
