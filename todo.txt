@@ -1,5 +1,8 @@
- - Desabilitar o uso de certos algoritmos para certos dados
+   Pronto
  - Posibilitar a realização de mais de uma análise por execução
+  
+   A Fazer 
+ - Desabilitar o uso de certos algoritmos para certos dados
  - Criar mecanismo de publicação do website
  - Tratamento de exceção
  - Mudar os dados de rede de transporte público para o formato GTFS
