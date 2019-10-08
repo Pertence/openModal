@@ -19,6 +19,9 @@ const Analyses = (props) => {
     const { classes } = props
     return (
         <div className={classes.area}>
+            {
+            <button type="button" onClick={function (){window.location.reload();}}> <span>Reload</span> </button>
+            }
             <Grid container spacing={8}>
                 {Functions.map((func, key) =>
                     <Grid key={key} item xs={12} lg={6}>
