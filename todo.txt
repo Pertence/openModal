@@ -5,4 +5,5 @@
  - Desabilitar o uso de certos algoritmos para certos dados
  - Criar mecanismo de publicação do website
  - Tratamento de exceção
+ - Implementar a função de upload
  - Mudar os dados de rede de transporte público para o formato GTFS
