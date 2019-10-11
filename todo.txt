@@ -2,6 +2,7 @@
  - Posibilitar a realização de mais de uma análise por execução
   
    A Fazer 
+ - Escrever resultados do algoritmo do Uber
  - Desabilitar o uso de certos algoritmos para certos dados
  - Criar mecanismo de publicação do website
  - Tratamento de exceção
