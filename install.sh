@@ -3,8 +3,16 @@
 
 #Esse arquivo precisa estar no diretório raiz da plataforma
 
+#instalando meios para poder comppilar server
+
+sudo apt update
+sudo apt install python3
+sudo apt install nodejs
+sudo apt install npm
+sudo apt install python3-pip
 
 #Instalação dos módulos javascript
+
 cd server
 npm install
 cd ..
@@ -30,5 +38,4 @@ pip3 install plotly==3.10.0
 pip3 install shapely
 
 pip3 install geopy
-
 
