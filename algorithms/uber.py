@@ -14,6 +14,7 @@ import math
 from networkx.algorithms import community
 from networkx import edge_betweenness_centrality as betweenness
 
+plt.rcParams.update({'figure.max_open_warning': 0})
 
 def createDataframes(data_loc):
     script_dir = os.getcwd()
@@ -98,31 +99,11 @@ for i in range(1, len(shapes)+1):
                 adj_area[i].append(j)
                 
 adj_0 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_1 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_2 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_3 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_4 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_5 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
 adj_6 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_7 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_8 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_9 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_10 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_11 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
 adj_12 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_13 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_14 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_15 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_16 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_17 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
 adj_18 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_19 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_20 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_21 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_22 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
-adj_23 = pd.DataFrame(data=0, index=adj_area.keys(), columns=adj_area.keys())
 
-dfs = [adj_0, adj_1, adj_2, adj_3, adj_4, adj_5, adj_6, adj_7, adj_8, adj_9, adj_10, adj_11, adj_12, adj_13, adj_14, adj_15, adj_16, adj_17, adj_18, adj_19, adj_20, adj_21, adj_22, adj_23]
+dfs = [adj_0, adj_6, adj_12, adj_18]
 
 for i,j in adj_area.items():
     print(i)
@@ -131,7 +112,7 @@ for i,j in adj_area.items():
         loc_df2 = x-1
         temp = df[(df['sourceid'] == i) & (df['dstid'] == x)]
         hourRem = temp['mean_travel_time'].min()
-        for myTime in range(24):
+        for myTime in range(4):
             try:
                 val = temp[temp['hod'] == myTime]['mean_travel_time'].values[0]
                 val = val - hourRem + 1
@@ -145,7 +126,7 @@ def most_central_edge(G):
     centrality = betweenness(G, weight='weight')
     return max(centrality, key=centrality.get)
 
-for value in range(24):
+for value in range(4):
     value = value
     print(value)
 
