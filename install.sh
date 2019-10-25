@@ -25,7 +25,7 @@ npm install csstools/normalize.css
 
 pip3 install matplotlib
 
-pip3 install networkx
+pip3 install networkx==2.3
 
 pip3 install sklearn
 
