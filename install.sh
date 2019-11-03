@@ -20,6 +20,8 @@ cd client
 npm install
 npm remove csstools/normalize.css
 npm install csstools/normalize.css
+npm run build
+npm install -g serve
 
 #Instalação dos módulos python
 
