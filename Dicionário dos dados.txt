@@ -1,0 +1,35 @@
+mobile.csv
+user - Id do Usuário
+latitude - Latitude do ponto
+longitude - Longitude do ponto
+timestamp - Tempo do ponto
+unixTime - Tempo unix do ponto
+date - Data do ponto
+weekday - Dia da semana
+
+bus.csv
+Name - Nome da Parada
+lat - Latitude da Parada
+lon - Longitude da Parada
+Routes - Rota em que a Parada participa
+
+metro.csv
+Name - Nome da Parada
+lat - Latitude da Parada
+lon - Longitude da Parada
+Routes - Rota em que a Parada participa
+
+data.csv
+sourceid - região de partida
+dstid - região de saída
+hod - horário
+mean_travel_time - tempo médio de viagem
+standard_deviation_travel_time - desvio padrão do tempo de viagem
+geometric_mean_travel_time - média geométrica de  tempo de viagem
+geometric_standard_deviation_travel_time - desvio padrão da média geométrica de tempo de viagem
+
+shapes.json ou shape.csv
+Dados espaciais da cidade
+
+
+
