@@ -16,8 +16,8 @@ Instalação do openModal
 
 Execução do openModal
 
-- Iniciar o servidor, executando o comando 'npm start' na raiz do projeto
-- Iniciar o client, executando o comando 'npm start na raiz da pasta 'client'
+- Iniciar o servidor, executando o comando 'npm start' na raiz da pasta 'server'
+- Iniciar o client, executando o comando 'serve -s build' na raiz da pasta 'client'
 
 Utilização da plataforma
 
