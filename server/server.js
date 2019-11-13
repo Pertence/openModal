@@ -19,6 +19,8 @@ app.post('/pts', (req, res) => {
     const { cluster, seed, iteractions } = req.body.variables
 
     let pythonProcess = execSync(`python3 ../algorithms/${req.body.algorithm}.py ${req.body.data} ${cluster} ${seed} ${iteractions}`)
+    
+    fs.writeFileSync('../client/public/results/done.txt', 'Done');
 
     let fileList = fs.readdirSync('../client/public/results');
 
@@ -39,6 +41,8 @@ app.post('/signature', (req, res) => {
 
     let pythonProcess = execSync(`python3 ../algorithms/${req.body.algorithm}.py  ${req.body.data} ${cluster} ${unitArea} ${timeVariation} ${startLat} ${startLon} ${endLat} ${endLon}`)
 
+    fs.writeFileSync('../client/public/results/done.txt', 'Done');
+    
     let fileList = fs.readdirSync('../client/public/results');
 
     console.log('Executed Algorithm');
@@ -56,6 +60,8 @@ app.post('/uber', (req, res) => {
 
     let pythonProcess = execSync(`python3 ../algorithms/${req.body.algorithm}.py  ${req.body.data}`)
 
+    fs.writeFileSync('../client/public/results/done.txt', 'Done');
+    
     let fileList = fs.readdirSync('../client/public/results');
 
     console.log('Executed Algorithm');
