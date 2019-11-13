@@ -67,7 +67,7 @@ class Results extends Component {
         return (
             <div className={classes.area}>
                 {<button type="button" onClick={function (){window.location.reload();}}> <span>Reload</span> </button>}
-                {results.length === 0 ? <p>Running Algorithms. This may take a while...</p> : ''}
+                {results.length === 0 ? <p>Running Algorithms. This may take a while...</p> : 'Pronto'}
                 <Grid container spacing={8}>
                     {results.map((result, key) => (
                         <Grid key={key} item xs={12} lg={6}>
