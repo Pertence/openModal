@@ -1,35 +1,55 @@
 html{
-    width: 100%;
-    height: 100%;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background-color: rgb(234, 235, 237);
-    width: 100%;
-    height: 100%;
-  }
-  
-  #root{
-    width: 100%;
-    height: 100%;
-  }
-  
-  #header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 64px;
-  }
-  
-  .link-menu{
-    text-decoration: none;
-    color: white;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  .disableSection{
-    pointer-events: none;
-    opacity: 0.2;
-  }
+input{
+  margin-bottom: 10px;
+  margin-right: 60px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(234, 235, 237);
+  width: 100%;
+  height: 100%;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+#upFile{
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+  background-color: #009578;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+#upFile :hover{
+  background-color: #00b28f;
+}
+
+#header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+}
+
+.link-menu{
+  text-decoration: none;
+  color: white;
+}
+
+.disableSection{
+  pointer-events: none;
+  opacity: 0.2;
+}
