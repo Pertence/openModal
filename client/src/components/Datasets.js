@@ -7,8 +7,9 @@ import Button from '@material-ui/core/Button';
 import Modal from 'react-modal';
 import { connect } from 'react-redux'
 import { changeData } from '../actions/modal';
-// import { modals } from '../utils/Constants';
+import { modals } from '../utils/Constants';
 import '../styles/index.css';
+import { func } from 'prop-types'
 
 const customStyles = {
     content: {
@@ -24,6 +25,7 @@ const customStyles = {
         transform: 'translate(-50%, -50%)'
     }
 };
+
 
 const style = {
     area: {
@@ -70,9 +72,21 @@ class Datasets extends Component {
         const { classes } = this.props;
         return (
             <div className={classes.area}>
-                {/*
-                    UNCOMMENT THIS WHEN IMPLEMENTING UPLOAD CITY FUNCTIONALITY
-                <Button variant="contained" size='small' color="primary" onClick={this.openModal}>Upload new city data here</Button>*/}
+                {
+                   // UNCOMMENT THIS WHEN IMPLEMENTING UPLOAD CITY FUNCTIONALITY
+                   <form class ="form" id="myForm" enctype="multipart/form-data">
+                       {modals.map((type, key) => (
+                            <div key={key}>
+                                <label htmlFor={type.id} className='input-dataset'>
+                                    {type.icon}
+                                    {type.type}
+                                </label>
+                                <input name="arquivo" type="file" id={type.id}/>
+                            </div>
+                        ))}
+                        <button type="submit" id="upFile">Upload</button>
+                </form>
+                }
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
@@ -110,4 +124,19 @@ const mapDispatchToProps = dispatch => ({
     setFolderName: (folderName) => dispatch(changeData(folderName))
 })
 
+function addEventos() {
+    document.getElementById("upFile").addEventListener("submit", e=>{
+        e.preventDefault();
+        alert("executou");
+        const endpoint = "upload.php";
+        const formData = new FormData();
+
+        formData.append("inpFile".inpFile.files[0]);
+        fetch(endpoint, {
+            method:"post",
+            body: formData
+        }).catch(console.error);
+    });
+}
+window.addEventListener("load",addEventos);
 export default withStyles(style)(connect(mapDispatchToProps)(Datasets))
