@@ -70,21 +70,18 @@ class Datasets extends Component {
         const { classes } = this.props;
         return (
             <div className={classes.area}>
-                {/*
-                    UNCOMMENT THIS WHEN IMPLEMENTING UPLOAD CITY FUNCTIONALITY
-                <Button variant="contained" size='small' color="primary" onClick={this.openModal}>Upload new city data here</Button>*/}
+                {
+                <Button variant="contained" size='small' color="primary" onClick={this.openModal}>Upload new city data here</Button>}
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onRequestClose={this.closeModal}
                     style={customStyles}
                     contentLabel="Select Datasets"
                 >  
-                <h2>Oops!</h2>
-                <h3>This Feature is not available on openModal v1.0</h3>
-                    {/* <form>
-                        {modals.map((type, key) => (
-                            <div key={key}>
-                                <label htmlFor={type.id} className='input-dataset'>
+                {<form>
+                     {modals.map((type, key) => (
+                          <div key={key}>
+                              <label htmlFor={type.id} className='input-dataset'>
                                     {type.icon}
                                     {type.type}
                                 </label>
@@ -92,7 +89,7 @@ class Datasets extends Component {
                             </div>
                         ))}
                         <Button variant="contained" size='small' color="primary" onClick={this.handleUpload}>Upload Data</Button>
-                    </form> */}
+                    </form>}
                 </Modal>
                 <Grid container spacing={8}>
                     {CityData.map((city, key) =>
