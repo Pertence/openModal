@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import Modal from 'react-modal';
 import { connect } from 'react-redux'
 import { changeData } from '../actions/modal';
-// import { modals } from '../utils/Constants';
+import { modals } from '../utils/Constants';
 import '../styles/index.css';
 
 const customStyles = {
