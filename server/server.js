@@ -69,5 +69,11 @@ app.post('/uber', (req, res) => {
     res.send({ status: 'SUCCESS', files: fileList });
 })
 
+app.post('/upload',  (req, res) => {
+
+    console.log('Uploading!');
+
+})
+
 // console.log that your server is up and running
 app.listen(port, () => console.log(`Listening on port ${port}`));
